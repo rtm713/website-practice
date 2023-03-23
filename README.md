@@ -1,4 +1,6 @@
 # website-practice
-a practice repo to test new ideas
 
-this is the first test
+
+## Things to do 
+
+1. add media breaks for different screen sizes
