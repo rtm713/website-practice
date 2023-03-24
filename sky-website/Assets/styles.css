@@ -4,21 +4,20 @@ body {
 }
 
 header {
-    background-image: url(./Images/alaska-mountains-hero-denali-1920x890.webp);
-    background-position: 0% 30%;
+    background-image: url(./Images/light-blue-sky.jpg);
     background-size: cover;
     height: 100px;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: .4rem solid rgb(39, 98, 236);
 }
 
 header h1 {
     color: white;
-    background-color:  rgb(60, 60, 60);
+    background-color: rgb(39, 98, 236);
     padding: 1.5rem 3rem 1.5rem 3rem;
-    border: .2rem solid rgb(39, 98, 236);
 }
 
 header nav {
@@ -40,7 +39,7 @@ nav a {
 }
 
 nav a:hover {
-    background-image: linear-gradient(black,white,black);
+    background-image: linear-gradient(white, rgb(249, 184, 43));
 }
 
 
@@ -49,10 +48,9 @@ nav a:hover {
     background-image: url(./Images/light-blue-sky.jpg);
     background-size: cover;
     margin:auto;
-    margin-top: 2rem;
-    text-align: center;
-    border: .4rem solid rgb(39, 98, 236);
     display:flex;
+    border: .4rem solid rgb(39, 98, 236);
+    border-top: 0;
 
 }
 
@@ -61,11 +59,41 @@ nav a:hover {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(39, 98, 236);
     padding: 1.2rem;
-    margin: auto;
+    justify-content: flex-start;
 }
 
 .textbox p {
     padding: 2rem;
     font-size: medium;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+}
+
+.main-container {
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    justify-content: space-between;
+    width:90%;
+}
+
+section{
+    width: 60%;
+    background-image: url(./Images/1000_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg);
+    background-size: cover;
+    text-align: center;
+    border: .4rem solid rgb(39, 98, 236);
+    opacity: .6;
+}
+
+section:hover {
+    opacity: 1;
+}
+
+aside {
+    width: 30%;
+    background-image: url(./Images/light-blue-sky.jpg);
+    background-size: cover;
+    text-align: center;
+    border: .4rem solid rgb(39, 98, 236);
 }

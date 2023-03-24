@@ -1,0 +1,44 @@
+:root {
+    --gray:  rgb(32, 32, 32);
+    --green: rgba(91,252,145,0.52);
+}
+
+body{
+    background-color: var(--gray);
+    display:inline-flex
+}
+
+h1{
+    color:rgb(139, 6, 255);
+    font-size: 50px;
+    font-family: monospace;
+    text-shadow: 2px 2px black;
+    background-color: rgba(91,252,145,0.52);
+    -webkit-box-shadow:0px 0px 200px 200px rgba(91,252,145,0.52);;
+    -moz-box-shadow: 0px 0px 200px 200px rgba(91,252,145,0.52);;
+    box-shadow: 0px 0px 200px 200px rgba(91,252,145,0.52);;
+}
+
+h1:hover {
+    color:rgb(238, 255, 4);
+}
+
+.quote {
+    display: inline-flex;
+    position: absolute;
+    top:25%;
+    right: 10%;
+    font-size: 20px;
+    color: rgb(139, 6, 255);
+    font-family: Lucida Handwriting, cursive;
+}
+
+.quote::after {
+    content:"- George Washington";
+    font-size: 15px;
+    color:silver;
+    align-self: flex-end;
+}
+
+
+
