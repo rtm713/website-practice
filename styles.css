@@ -157,7 +157,6 @@ h1:hover {
     padding: 4rem 4rem 4rem 0;
     float: right;
     width: 50%;
-
 }
 
 .bio h2 {
@@ -170,7 +169,6 @@ h1:hover {
     font-size: 20px;
     color: white;
     font-family: sans-serif;
-
 }
 
 
@@ -183,5 +181,53 @@ h1:hover {
 }
 
 .projects {
+    color: var(--blue);
+    background-color: (var(--blue));
+    text-align: center;
+    padding: 4rem 4rem 4rem 0;
+    float: right;
+    width: 50%;
+}
 
+.projects h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.projects p {
+    font-size: 20px;
+    color: var(--gray);
+    font-family: sans-serif;
+
+}
+
+
+
+/*----------------------- fourth page --------->*/
+
+#fourth-page {
+    background-color: var(--blue);
+    height: 100vh;
+}
+
+.contact-me {
+    color: var(--green);
+    background-color: (var(--blue));
+    text-align: center;
+    padding: 4rem 4rem 4rem 0;
+    float: right;
+    width: 50%;
+}
+
+.contact-me h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact-me  p {
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
 }
