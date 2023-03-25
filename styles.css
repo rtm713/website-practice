@@ -1,26 +1,37 @@
 :root {
     --gray:  rgb(32, 32, 32);
-    --green: rgba(91,252,145,0.52);
     --green: #CCF381;
-    --blue: rgb(0, 255, 255);
     --blue:  #4831D4;
     --purple:rgb(139, 6, 255);
 }
+
+
 
 body{
     background-color: var(--gray);
 }
 
-nav {
+.front-page {
+    background-color: var(--gray);
+    height: 100vh;
+
 }
+
+#code-pic {
+    opacity: .15;
+    height: 70%;
+    position: absolute;
+    right:0%;
+    bottom: -20%;
+}
+
 
 nav a {
     color: white;
     font-size: 30px;
     text-decoration: none;
     float:right;
-    margin: 0 2% 0 2%;
-    
+    margin: 0 2% 0 2%;    
 }
 
 nav a:hover {
@@ -75,5 +86,29 @@ h1:hover {
     text-shadow: 2px 2px black;
 }
 
+.scroll {
+    position: absolute;
+    bottom: 1%;
+    left: 2%;
+}
+
+.scroll p {
+    font-size: 20px;
+    font-family: monospace;
+    color: var(--green);
+}
+
+.scroll p::after {
+    content: "\1F847";
+}
 
 
+
+.second-page {
+    background-color: var(--blue);
+    height: 100vh;
+}
+
+.bio {
+    color: var(--green);
+}
