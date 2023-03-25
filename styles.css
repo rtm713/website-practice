@@ -50,21 +50,22 @@ nav a {
     font-size: 30px;
     text-decoration: none;
     float:right;
-    margin: 0 2% 0 2%; 
+    margin: 2% 2% 0 2%; 
 }
 
 nav a:hover {
-    color: var(--blue);
-    background-color: var(--green);
+    color: var(--green);
     font-weight: 800;
-    -webkit-box-shadow:0px 0px 20px 20px var(--green);;
-    -moz-box-shadow: 0px 0px 20px 20px var(--green);;
-    box-shadow: 0px 0px 20px 20px var(--green);;
+    font-size: 50px;
 }
 
 header {
     display: flex;
     margin-left: 5%;
+}
+
+header a {
+    text-decoration: none;
 }
 
 h1{
@@ -100,12 +101,6 @@ h1:hover {
     align-self: flex-end;
 }
 
-.quote:hover {
-    font-size: 30px;
-    font-family: monospace;
-    text-shadow: 2px 2px black;
-}
-
 .scroll {
     position: absolute;
     bottom: 1%;
@@ -135,17 +130,28 @@ h1:hover {
     color: var(--green);
     background-color: (var(--blue));
     text-align: center;
-    padding: 2rem;
-    position:relative;
-    top:10%;
-    right:10%;
+    padding: 4rem;
+    float: right;
+    width: 50%;
 
 }
 
 .bio h2 {
     text-align: center;
     font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.bio p {
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+
+/*----------------------- third page --------->*/
+
 
 #third-page {
     background-color: var(--green);
