@@ -111,6 +111,7 @@ h1:hover {
     background-color: var(--blue);
     height: 100vh;
     display: flex;
+    flex-wrap:wrap;
 }
 
 #second-page .nav-box {
@@ -148,22 +149,41 @@ h1:hover {
     color: var(--green);
 }
 
-.bio {
-    color: var(--green);
-    background-color: (var(--blue));
-    width: 50%;
-}
 
-.bio h2 {
+#second-page .page-title {
+    color: var(--green);
+    width: 60%;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.bio-box {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 80%;
+}
+
+.bio {
+    width:60%;
+    display: block;
+}
+
 .bio p {
-    font-size: 20px;
     color: white;
+    font-size: 20px;
     font-family: sans-serif;
+    text-align: center;
+    padding: 0 5% 0 5%;
+}
+
+.bio ul {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    list-style-position: inside;
 }
 
 
@@ -174,6 +194,7 @@ h1:hover {
     background-color: var(--green);
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
 }
 
 #third-page .nav-box {
@@ -184,7 +205,7 @@ h1:hover {
 
 #third-page #home-button img {
     height:80%;
-    background-image: radial-gradient(var(--green),var(--blue),var(--blue));
+    background-image: radial-gradient(var(--blue),var(--green),var(--green));
     padding:21%;
 }
 
@@ -198,7 +219,7 @@ h1:hover {
 }
 
 #third-page #page-nav a {
-    color: white;
+    color: var(--gray);
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
@@ -208,22 +229,24 @@ h1:hover {
 
 #third-page #page-nav a:hover {
     font-size: 30px;
-    color: var(--green);
+    color: var(--blue);
 }
 
 
-.projects {
+#third-page .page-title {
     color: var(--blue);
+    width: 60%;
     text-align: center;
     font-size: 40px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#project-box {
+#project-box  {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: space-around;
+    width: 100%;
+    padding:0 5% 0 5%;
 }
 
 #project-box div {
@@ -231,13 +254,13 @@ h1:hover {
     border: .5rem solid var(--blue);
     display: grid;
     background-color:var(--blue);
+    margin:0 0 3% 0;
+    
 }
 
 #project-box h3 {
     grid-column: 1;
     grid-row: 1;
-    max-width: fit-content;
-    max-height: 2rem;
     align-self: center;
     position:relative;
     left:50%;
