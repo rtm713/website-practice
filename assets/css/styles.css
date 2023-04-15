@@ -144,7 +144,7 @@ nav a:hover {
 
 #projectBox a::before {
     content: " ";
-    background-image: url(/animationsTest/assets/Images/blueprint.jpeg);
+    background-image: url(../Images/blueprint.jpeg);
     background-size: cover;
     position: absolute;
     top: 0px;
