@@ -35,6 +35,11 @@
 body {
     background-image: url('/animationsTest/assets/Images/pexels-felix-mittermeier-956999.jpg');
     background-size: cover;
+    background-attachment: fixed;
+}
+
+#homePage {
+    height: 100vh;
 }
 
 header {
@@ -53,6 +58,7 @@ h1 {
     animation-duration: 1s;
     font-size: 80px;
     color:var(--lightBlue);
+    text-shadow: 2px 4px 8px rgba(234, 0, 255, 0.6);
 }
 
 p {
@@ -71,6 +77,7 @@ nav {
     justify-content: space-between;
     width: 30%;
     margin-right: 7%;
+    margin-top: 2%;
     height: fit-content;
 }
 
@@ -78,8 +85,82 @@ nav a {
     color:var(--pink);
     font-size: 30px;
     text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 4px 6px rgba(0, 94, 202, 0.6);
 }
 
 nav a:hover {
     color:var(--lightBlue);
+}
+
+
+#thirdPage {
+    height: 100vh;
+}
+
+#scroll {
+    color: aqua;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+
+
+
+
+
+
+#project_page {
+    min-height: 100vh;
+    max-height: fit-content;
+}
+
+#project_page h2 {
+    color: var(--lightBlue);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 4px 8px rgba(234, 0, 255, 0.6);
+} 
+
+#projectBox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+#projectBox a {
+ width: 30%;
+ height: 15rem;
+ text-align: center;
+ text-decoration: none;
+ border: solid 4px var(--pink);
+ margin: 1rem 0 1rem 0;
+ position: relative;
+}
+
+#projectBox a::before {
+    content: " ";
+    background-image: url(/animationsTest/assets/Images/blueprint.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0;
+    left: 0px;
+    opacity: .5;
+}
+
+#projectBox a:hover:before {
+    opacity: 1;
+}
+
+
+#projectBox a h3 {
+    color: var(--lightBlue);
+    position: relative;
+    display: inline-flex;
 }
