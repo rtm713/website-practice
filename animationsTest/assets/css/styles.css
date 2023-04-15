@@ -1,3 +1,10 @@
+
+:root {
+    --gray:  rgb(32, 32, 32);
+    --pink: rgb(251, 37, 118);
+    --lightBlue:  rgb(20, 255, 236);
+}
+
 @keyframes slideInRight {
     from {
         transform: translateX(50vw) ;
@@ -26,7 +33,13 @@
 }
 
 body {
-    background-color:rgb(27, 27, 27);
+    background-color:var(--gray);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 #headDiv {
@@ -37,17 +50,35 @@ body {
 h1 {
     animation-name: slideInRight;
     animation-duration: 1s;
-    font-size: 60px;
-    color:deeppink;
+    font-size: 80px;
+    color:var(--lightBlue);
 }
 
 p {
-    color:aqua;
+    color:white;
     font-size: 20px;
     margin-left: 20%;
     font-family: sans-serif;
 }
 
-#fade-in-one {
-    animation: fadeInHide 2s, fadeIn 4s 2s;
+.fade-in-one {
+    animation: fadeInHide 1s, fadeIn 3s 1s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin-right: 7%;
+    height: fit-content;
+}
+
+nav a {
+    color:var(--pink);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:var(--lightBlue);
 }

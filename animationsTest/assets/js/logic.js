@@ -1,6 +1,5 @@
 
 var titleBox = document.querySelector('#headDiv');
-var fadeInOne = document.querySelector('#fade-in-one');
 var titleLetters = ["W","e","l","c","o","m","e"];
 var stop = 0;
 
