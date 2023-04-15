@@ -33,7 +33,8 @@
 }
 
 body {
-    background-color:var(--gray);
+    background-image: url('/animationsTest/assets/Images/pexels-felix-mittermeier-956999.jpg');
+    background-size: cover;
 }
 
 header {
