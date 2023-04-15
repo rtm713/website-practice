@@ -1,0 +1,53 @@
+@keyframes slideInRight {
+    from {
+        transform: translateX(50vw) ;
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeInHide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+body {
+    background-color:rgb(27, 27, 27);
+}
+
+#headDiv {
+    display: flex;
+    margin-left: 10%;
+}
+
+h1 {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    font-size: 60px;
+    color:deeppink;
+}
+
+p {
+    color:aqua;
+    font-size: 20px;
+    margin-left: 20%;
+    font-family: sans-serif;
+}
+
+#fade-in-one {
+    animation: fadeInHide 2s, fadeIn 4s 2s;
+}
