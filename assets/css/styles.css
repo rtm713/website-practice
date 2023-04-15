@@ -33,7 +33,7 @@
 }
 
 body {
-    background-image: url('/assets/Images/pexels-felix-mittermeier-956999.jpg');
+    background-image: url('../Images/pexels-felix-mittermeier-956999.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
