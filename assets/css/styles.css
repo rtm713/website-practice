@@ -32,6 +32,10 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-image: url('../Images/pexels-felix-mittermeier-956999.jpg');
     background-size: cover;
@@ -61,7 +65,7 @@ h1 {
     text-shadow: 2px 4px 8px rgba(234, 0, 255, 0.6);
 }
 
-p {
+#homePage p {
     color:white;
     font-size: 20px;
     margin-left: 20%;
@@ -95,22 +99,12 @@ nav a:hover {
 }
 
 
-#thirdPage {
-    height: 100vh;
-}
-
 #scroll {
     color: aqua;
     position: absolute;
     bottom: 5%;
     right: 5%;
 }
-
-
-
-
-
-
 
 #project_page {
     min-height: 100vh;
@@ -135,11 +129,13 @@ nav a:hover {
 #projectBox a {
  width: 30%;
  height: 15rem;
- text-align: center;
  text-decoration: none;
  border: solid 4px var(--pink);
  margin: 1rem 0 1rem 0;
  position: relative;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
 }
 
 #projectBox a::before {
@@ -154,13 +150,64 @@ nav a:hover {
     opacity: .5;
 }
 
+#projectBox a:nth-child(1)::before {
+    background-image: url(../Images/Screenshot\ 2023-04-15\ 175532.png);
+    background-size: contain;
+}
+
 #projectBox a:hover:before {
     opacity: 1;
 }
 
+#projectBox a:hover {
+    align-items: flex-end;
+}
 
 #projectBox a h3 {
     color: var(--lightBlue);
+    background-color: var(--pink);
     position: relative;
-    display: inline-flex;
+    padding: 5px;
+    font-size: 25px;
+}
+
+
+#thirdPage {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#thirdPage h2 {
+    width: 90%;
+    margin: auto;
+    color: var(--lightBlue);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 4px 8px rgba(234, 0, 255, 0.6);
+}
+
+#bioDiv {
+    width: 95%;
+    display:inline-flex;
+    justify-content: space-around;
+}
+
+#bioPicBox {
+    width: 45%;
+    
+}
+
+#bioPicBox img {
+    max-width: 90%;
+}
+
+#bioBox {
+    width: 45%;
+}
+
+#bioBox p {
+    color: white;
+    font-size: 20px;
 }
