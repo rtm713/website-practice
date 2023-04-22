@@ -152,7 +152,12 @@ nav a:hover {
 
 #projectBox a:nth-child(1)::before {
     background-image: url(../Images/Screenshot\ 2023-04-15\ 175532.png);
-    background-size: contain;
+    background-size: cover;
+}
+
+#projectBox a:nth-child(2)::before {
+    background-image: url(../Images/nasaImageLibrary.png);
+    background-size: cover;
 }
 
 #projectBox a:hover:before {
