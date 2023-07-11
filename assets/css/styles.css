@@ -1,7 +1,7 @@
 
 :root {
     --gray:  rgb(32, 32, 32);
-    --pink: rgb(251, 37, 118);
+    --pink: rgba(234, 0, 255, 0.6);
     --lightBlue:  rgb(20, 255, 236);
 }
 
@@ -10,7 +10,7 @@
         transform: translateX(50vw) ;
     }
     to {
-        transform: translateX(0);
+        transform: translateX(0vw);
     }
 }
 
@@ -54,7 +54,7 @@ header {
 
 #headDiv {
     display: flex;
-    margin-left: 10%;
+    margin:auto;
 }
 
 h1 {
@@ -77,27 +77,94 @@ h1 {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-    margin-right: 7%;
-    margin-top: 2%;
-    height: fit-content;
-}
-
-nav a {
-    color:var(--pink);
-    font-size: 30px;
-    text-decoration: none;
-    font-family: sans-serif;
+    float: left;
+    position:absolute;
+    top: 20vh;
+    left: -40px;
+    background: transparent;
+  }
+  
+  nav ul {
+    text-align: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    position: relative;
+    width: 70px;
+    cursor: pointer;
+    background: var(--lightBlue);
+    text-transform: uppercase;
+    transition:all .4s ease-out;
+    box-shadow: 2px 2px 6px rgba(234, 0, 255, 0.6);
+  }
+  
+  nav ul li:after {
+    position: absolute;
+    background: var(--gray);
+    color: var(--lightBlue);
+    top:0;
+    left: 70px;
+    width: max-content; 
+    padding: 0 10px 0 10px;
+    height: 100%;
+    opacity:.5;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition:all .4s ease-out;
+    box-shadow: 2px 2px 6px rgba(234, 0, 255, 0.6);
+  }
+  
+  #navOne:after { 
+    content: "Projects";
+    line-height: 88px;
     font-weight: 700;
-    text-shadow: 2px 4px 6px rgba(0, 94, 202, 0.6);
+    font-size: 40px;  
+  }
+  #navTwo:after { 
+    content: "About Me";
+    line-height: 88px;
+    font-weight: 700;
+    font-size: 40px;  
+  }
+  #navThree:after { 
+    content: "Contact Me";
+    line-height: 88px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  nav ul li:hover {
+    transform: translateX(-70px);
+  }
+  
+  nav ul li:hover:after {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg) scale(1) ;
+  }
+  
+  nav ul li > div {
+    display: inline-block;
+    padding: 25px 0;
+    background: transparent;
+  }
+  
+  nav ul li div { 
+    position: relative; 
+}
+  
+.homeButton {
+    background-color: #FB2576;
+    padding: 6px;
+    position: absolute;
+    right: 5%;
+    margin-top: 3%;
+    border-radius: 30%;
 }
 
-nav a:hover {
-    color:var(--lightBlue);
+.homeButton:hover {
+    background-color: var(--lightBlue);
 }
-
 
 #scroll {
     color: aqua;
@@ -130,7 +197,7 @@ nav a:hover {
  width: 30%;
  height: 15rem;
  text-decoration: none;
- border: solid 4px var(--pink);
+ border: solid 4px var(--lightBlue);
  margin: 1rem 0 1rem 0;
  position: relative;
  display: inline-flex;
@@ -179,8 +246,8 @@ nav a:hover {
 }
 
 #projectBox a h3 {
-    color: var(--lightBlue);
-    background-color: var(--pink);
+    color: white;
+    background-color: #FB2576;
     position: relative;
     padding: 5px;
     font-size: 25px;
@@ -216,6 +283,7 @@ nav a:hover {
 
 #bioPicBox img {
     max-width: 90%;
+    border: 6px solid var(--gray);
 }
 
 #bioBox {
@@ -225,6 +293,8 @@ nav a:hover {
 #bioBox p {
     color: white;
     font-size: 20px;
+    background-color: var(--gray);
+    padding: 10% 5% 10% 5%;
 }
 
 #contactPage {
@@ -233,7 +303,7 @@ nav a:hover {
 }
 
 #contactBox {
-    color: var(--pink);
+    color: var(--lightBlue);
     font-size: 40px;
     height: 80%;
     margin: auto;
