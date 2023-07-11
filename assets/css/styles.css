@@ -160,6 +160,16 @@ nav a:hover {
     background-size: cover;
 }
 
+#projectBox a:nth-child(3)::before {
+    background-image: url(../Images/Screenshot\ 2023-07-10\ 203047.png);
+    background-size: cover;
+}
+
+#projectBox a:nth-child(4)::before {
+    background-image: url(../Images/Screenshot\ 2023-07-10\ 202016.png);
+    background-size: cover;
+}
+
 #projectBox a:hover:before {
     opacity: 1;
 }
@@ -215,4 +225,26 @@ nav a:hover {
 #bioBox p {
     color: white;
     font-size: 20px;
+}
+
+#contactPage {
+    height: 100vh;
+    display: flex;
+}
+
+#contactBox {
+    color: var(--pink);
+    font-size: 40px;
+    height: 80%;
+    margin: auto;
+    text-shadow: 2px 2px 4px black;
+}
+
+#contactBox h2 {
+    width: 90%;
+    margin: auto;
+    color: var(--lightBlue);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 4px 8px rgba(234, 0, 255, 0.6);
 }
