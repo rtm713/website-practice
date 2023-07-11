@@ -1,8 +1,9 @@
 
 :root {
     --gray:  rgb(32, 32, 32);
-    --pink: rgba(234, 0, 255, 0.6);
+    --purple: rgba(234, 0, 255, 0.6);
     --lightBlue:  rgb(20, 255, 236);
+    --pink: #FB2576;
 }
 
 @keyframes slideInRight {
@@ -37,7 +38,7 @@ html {
 }
 
 body {
-    background-image: url('../Images/pexels-felix-mittermeier-956999.jpg');
+    background-image: url('../Images/starsbackground.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -246,8 +247,8 @@ nav {
 }
 
 #projectBox a h3 {
-    color: white;
-    background-color: #FB2576;
+    color: var(--lightBlue);
+    background-color: var(--gray);
     position: relative;
     padding: 5px;
     font-size: 25px;
@@ -300,17 +301,21 @@ nav {
 #contactPage {
     height: 100vh;
     display: flex;
+    flex-direction: column;
 }
 
 #contactBox {
-    color: var(--lightBlue);
-    font-size: 40px;
-    height: 80%;
+    color: white;
+    background-color: var(--gray);
+    font-size: 35px;
+    height: fit-content;
     margin: auto;
+    margin-top: 0;
     text-shadow: 2px 2px 4px black;
+    padding: 0 2% 0 2%;
 }
 
-#contactBox h2 {
+#contactPage h2 {
     width: 90%;
     margin: auto;
     color: var(--lightBlue);
