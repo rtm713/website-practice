@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Animations</title>
+    <title>Travis Meyer</title>
 </head>
 <body>
 
     <div id="homePage">
         <header>
             <div id="headDiv"></div>
-            <nav>
+            <nav class="fade-in-one">
                 <ul>
                   <a href="#project_page">
                   <li id="navOne">
@@ -59,9 +59,9 @@
             </nav>
         </header>
        <div class="fade-in-one">
-        <p>My name is Travis and I like to build websites!  Feel free to look around!</p>
+        <p id="homeP">My name is Travis, and I code things! Scroll down or use the nav-bar on your left to view my projects, read my bio, or find my contact info.</p>
        </div>
-       <p id="scroll">Scroll Down!</p>
+       <p id="scroll" class="fade-in-one">Scroll Down!</p>
     </div>
 
     <div id="project_page">
@@ -128,8 +128,14 @@
         </a>
         <h2>Contact Me</h2>
         <div id="contactBox">
-            <h4>Call or Text: 913-998-3914</h4>
-            <h4>Email: rtm713@gmail.com</h4>
+            <!-- <h4>Call or Text: 913-998-3914</h4>
+            <h4>Email: rtm713@gmail.com</h4> -->
+            <h2>Student Contact Form</h2>
+            <form action="mailto:rtm713@gmail.com" method="post" enctype="text/plain">
+               Student Name:<br><input type="text" name="sname"> <br>
+               Student Subject:<br><input type="text" name="ssubject"><br>
+               <input type="submit" value="Send">
+            </form>
         </div>
     </div>
 

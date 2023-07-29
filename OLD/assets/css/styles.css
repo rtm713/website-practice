@@ -1,0 +1,326 @@
+
+:root {
+    --gray:  rgb(32, 32, 32);
+    --purple: rgba(234, 0, 255, 0.6);
+    --lightBlue:  rgb(20, 255, 236);
+    --pink: #FB2576;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50vw) ;
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fadeInHide {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../Images/starsbackground.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    cursor:crosshair;
+}
+
+#homePage {
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#headDiv {
+    display: flex;
+    margin:auto;
+}
+
+h1 {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    font-size: 80px;
+    color:var(--lightBlue);
+    text-shadow: 2px 4px 8px rgba(234, 0, 255, 0.6);
+}
+
+#homePage p {
+    color:white;
+    font-size: 20px;
+    margin-left: 20%;
+    font-family: sans-serif;
+}
+
+.fade-in-one {
+    animation: fadeInHide 1s, fadeIn 3s 1s;
+}
+
+nav {
+    float: left;
+    position:absolute;
+    top: 20vh;
+    left: -40px;
+    background: transparent;
+  }
+  
+  nav ul {
+    text-align: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    position: relative;
+    width: 70px;
+    cursor: pointer;
+    background: var(--lightBlue);
+    text-transform: uppercase;
+    transition:all .4s ease-out;
+    box-shadow: 2px 2px 6px rgba(234, 0, 255, 0.6);
+  }
+  
+  nav ul li:after {
+    position: absolute;
+    background: var(--gray);
+    color: var(--lightBlue);
+    top:0;
+    left: 70px;
+    width: max-content; 
+    padding: 0 10px 0 10px;
+    height: 100%;
+    opacity:.5;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: 0 100%;
+    transition:all .4s ease-out;
+    box-shadow: 2px 2px 6px rgba(234, 0, 255, 0.6);
+  }
+  
+  #navOne:after { 
+    content: "Projects";
+    line-height: 88px;
+    font-weight: 700;
+    font-size: 40px;  
+  }
+  #navTwo:after { 
+    content: "About Me";
+    line-height: 88px;
+    font-weight: 700;
+    font-size: 40px;  
+  }
+  #navThree:after { 
+    content: "Contact Me";
+    line-height: 88px;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  nav ul li:hover {
+    transform: translateX(-70px);
+  }
+  
+  nav ul li:hover:after {
+    opacity: 1;
+    transform: perspective(400px) rotateY(0deg) scale(1) ;
+  }
+  
+  nav ul li > div {
+    display: inline-block;
+    padding: 25px 0;
+    background: transparent;
+  }
+  
+  nav ul li div { 
+    position: relative; 
+}
+  
+.homeButton {
+    background-color: #FB2576;
+    padding: 6px;
+    position: absolute;
+    right: 5%;
+    margin-top: 3%;
+    border-radius: 30%;
+}
+
+.homeButton:hover {
+    background-color: var(--lightBlue);
+}
+
+#scroll {
+    color: aqua;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#project_page {
+    min-height: 100vh;
+    max-height: fit-content;
+}
+
+#project_page h2 {
+    color: var(--lightBlue);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 4px 8px rgba(234, 0, 255, 0.6);
+} 
+
+#projectBox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+#projectBox a {
+ width: 30%;
+ height: 15rem;
+ text-decoration: none;
+ border: solid 4px var(--lightBlue);
+ margin: 1rem 0 1rem 0;
+ position: relative;
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#projectBox a::before {
+    content: " ";
+    background-image: url(../Images/blueprint.jpeg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0;
+    left: 0px;
+    opacity: .5;
+}
+
+#projectBox a:nth-child(1)::before {
+    background-image: url(../Images/Screenshot\ 2023-04-15\ 175532.png);
+    background-size: cover;
+}
+
+#projectBox a:nth-child(2)::before {
+    background-image: url(../Images/nasaImageLibrary.png);
+    background-size: cover;
+}
+
+#projectBox a:nth-child(3)::before {
+    background-image: url(../Images/Screenshot\ 2023-07-10\ 203047.png);
+    background-size: cover;
+}
+
+#projectBox a:nth-child(4)::before {
+    background-image: url(../Images/Screenshot\ 2023-07-10\ 202016.png);
+    background-size: cover;
+}
+
+#projectBox a:hover:before {
+    opacity: 1;
+}
+
+#projectBox a:hover {
+    align-items: flex-end;
+}
+
+#projectBox a h3 {
+    color: var(--lightBlue);
+    background-color: var(--gray);
+    position: relative;
+    padding: 5px;
+    font-size: 25px;
+}
+
+
+#thirdPage {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#thirdPage h2 {
+    width: 90%;
+    margin: auto;
+    color: var(--lightBlue);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 4px 8px rgba(234, 0, 255, 0.6);
+}
+
+#bioDiv {
+    width: 95%;
+    display:inline-flex;
+    justify-content: space-around;
+}
+
+#bioPicBox {
+    width: 45%;
+    
+}
+
+#bioPicBox img {
+    max-width: 90%;
+    border: 6px solid var(--gray);
+}
+
+#bioBox {
+    width: 45%;
+}
+
+#bioBox p {
+    color: white;
+    font-size: 20px;
+    background-color: var(--gray);
+    padding: 10% 5% 10% 5%;
+}
+
+#contactPage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#contactBox {
+    color: white;
+    background-color: var(--gray);
+    font-size: 35px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 0;
+    text-shadow: 2px 2px 4px black;
+    padding: 0 2% 0 2%;
+}
+
+#contactPage h2 {
+    width: 90%;
+    margin: auto;
+    color: var(--lightBlue);
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 4px 8px rgba(234, 0, 255, 0.6);
+}
